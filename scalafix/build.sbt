@@ -5,8 +5,8 @@ lazy val scala3Version = "3.5.0"
 
 inThisBuild(
   List(
-    organization := "com.example",
-    homepage := Some(url("https://github.com/com/example")),
+    organization := "io.lancewalton",
+    homepage := Some(url("https://github.com/lancewalton/scalafix-duplicate-finder")),
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
     ),
