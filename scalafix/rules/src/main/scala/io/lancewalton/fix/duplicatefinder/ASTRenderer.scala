@@ -1,9 +1,10 @@
-package fix
+package io.lancewalton.fix.duplicatefinder
 
 import scalafix.v1._
+
 import scala.meta._
 
-class ScalafixDuplicateFinder extends SemanticRule("ScalafixDuplicateFinder") {
+class ASTRenderer extends SemanticRule("ASTRenderer") {
 
   override def fix(implicit doc: SemanticDocument): Patch = {
     println("Tree.syntax: " + doc.tree.syntax)

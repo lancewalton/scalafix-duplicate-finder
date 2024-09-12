@@ -1,1 +1,2 @@
-fix.ScalafixDuplicateFinder
+io.lancewalton.fix.duplicatefinder.ASTRenderer
+io.lancewalton.fix.duplicatefinder.DuplicateStringLiterals

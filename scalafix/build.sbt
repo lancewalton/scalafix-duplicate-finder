@@ -10,14 +10,6 @@ inThisBuild(
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
     ),
-    developers := List(
-      Developer(
-        "example-username",
-        "Example Full Name",
-        "example@email.com",
-        url("https://example.com")
-      )
-    ),
     semanticdbEnabled := true,
     semanticdbVersion := scalafixSemanticdb.revision
   )
