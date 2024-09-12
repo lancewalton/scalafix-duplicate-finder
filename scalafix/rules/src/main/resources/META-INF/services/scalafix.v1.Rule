@@ -1,2 +1,2 @@
-io.lancewalton.fix.duplicatefinder.ASTRenderer
-io.lancewalton.fix.duplicatefinder.DuplicateStringLiterals
+fix.ASTRenderer
+fix.DuplicateStringLiterals

@@ -1,6 +1,6 @@
 /*
 rule = ASTRenderer
  */
-package io.lancewalton.fix.duplicatefinder
+package fix
 
 object ShowAST {}

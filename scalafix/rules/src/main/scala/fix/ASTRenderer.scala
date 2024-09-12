@@ -1,4 +1,4 @@
-package io.lancewalton.fix.duplicatefinder
+package fix
 
 import scalafix.v1._
 
