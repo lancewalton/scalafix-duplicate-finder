@@ -58,13 +58,7 @@ class DuplicateFuzzyStringLiterals
   }
 
   private def isMatch(str: String, ss: Iterable[String]): Boolean = {
-    ss.exists { s =>
-      str != s && {
-        val score = Levenshtein.score(str, s)
-        println(s"score($str, $s) = $score")
-        score >= 0.7
-      }
-    }
+    ss.exists(s => str != s && Levenshtein.score(str, s) >= 0.7)
   }
 
   private def isInterestingString(lit: Lit.String): Boolean =
