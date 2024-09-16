@@ -32,8 +32,7 @@ lazy val rules = projectMatrix
   .settings(
     moduleName := "scalafix",
     libraryDependencies ++= Seq(
-      "ch.epfl.scala" %% "scalafix-core" % V.scalafixVersion,
-      "com.github.vickumar1981" %% "stringdistance" % "1.2.7"
+      "ch.epfl.scala" %% "scalafix-core" % V.scalafixVersion
     )
   )
   .defaultAxes(VirtualAxis.jvm)

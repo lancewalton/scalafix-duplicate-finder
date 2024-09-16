@@ -3,8 +3,6 @@ rule = DuplicateLiterals
  */
 package fix
 
-import fix.FuzzyStringLiterals.uuid
-
 import java.util.UUID
 
 object DuplicateStringLiterals {
