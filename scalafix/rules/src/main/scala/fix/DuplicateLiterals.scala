@@ -5,6 +5,9 @@ import scalafix.v1._
 import scala.collection.compat._
 import scala.meta._
 
+case class DuplicateLiteralDiagnostic(message: String, position: Position)
+  extends Diagnostic
+
 object DuplicateLiterals {
   private val globalLiterals = scala.collection.mutable.Set.empty[Any]
 }
