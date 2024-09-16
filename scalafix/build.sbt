@@ -6,7 +6,9 @@ lazy val scala3Version = "3.5.0"
 inThisBuild(
   List(
     organization := "io.lancewalton",
-    homepage := Some(url("https://github.com/lancewalton/scalafix-duplicate-finder")),
+    homepage := Some(
+      url("https://github.com/lancewalton/scalafix-duplicate-finder")
+    ),
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
     ),
@@ -29,7 +31,10 @@ lazy val `scalafix-duplicate-finder` = (project in file("."))
 lazy val rules = projectMatrix
   .settings(
     moduleName := "scalafix",
-    libraryDependencies += "ch.epfl.scala" %% "scalafix-core" % V.scalafixVersion
+    libraryDependencies ++= Seq(
+      "ch.epfl.scala" %% "scalafix-core" % V.scalafixVersion,
+      "com.github.vickumar1981" %% "stringdistance" % "1.2.7"
+    )
   )
   .defaultAxes(VirtualAxis.jvm)
   .jvmPlatform(rulesCrossVersions)

@@ -1,2 +1,3 @@
 fix.ASTRenderer
 fix.DuplicateLiterals
+fix.DuplicateFuzzyStringLiterals

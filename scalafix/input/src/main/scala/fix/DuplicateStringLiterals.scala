@@ -3,6 +3,8 @@ rule = DuplicateLiterals
  */
 package fix
 
+import fix.FuzzyStringLiterals.uuid
+
 import java.util.UUID
 
 object DuplicateStringLiterals {
@@ -28,4 +30,5 @@ object DuplicateStringLiterals {
 
   val uuid = UUID.randomUUID()
   val interpolated: String = s"uuid = $uuid"
+  val interpolated2: String = s"uuid = $uuid"
 }
